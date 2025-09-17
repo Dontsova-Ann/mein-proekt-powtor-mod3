@@ -1,6 +1,11 @@
 /* font-family: "Roboto", sans-serif;
  */
  /* reset */
+ *{
+  box-sizing: border-box;
+  
+
+ }
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -20,6 +25,11 @@ a {
 img {
   display: block;
 }
+address {
+  font-style: normal;
+}
+
+
 
 /* common */
 .container {
@@ -144,11 +154,13 @@ margin: 0 auto;
   border: none;
  min-width: 169px;
 height: 56px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
-  cursor: pointer;
+ 
 }
 /* #endregion hero*/
 
@@ -160,7 +172,7 @@ height: 56px;
 }
 
 .section-title{
-padding-bottom: 8px;
+margin-bottom:  8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -276,7 +288,7 @@ color: #2e2f42;
 
 .portfolio-name{
   padding-top: 32px;
-  padding-bottom: 8px;
+ margin-bottom: 8px;
   font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
